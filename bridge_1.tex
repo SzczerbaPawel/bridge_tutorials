@@ -1,0 +1,47 @@
+\documentclass{article}
+
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{kpfonts}
+\usepackage{color}
+
+\newcommand*\Hs[1]{\ensuremath{\color{red}\varheartsuit}}
+\newcommand*\Ss[1]{\ensuremath{\color{black}\spadesuit}}
+\newcommand*\Ds[1]{\ensuremath{\color{red}\vardiamondsuit}}
+\newcommand*\Cs[1]{\ensuremath{\color{black}\clubsuit}}
+\newcommand*\NT[1]{{\color{black}\textsc{NT}}}
+
+\begin{document}
+    \section{Obliczanie siły karty}
+    	\begin{itemize}
+    	\item Punty za figury (\textit{PC - point count}): \\
+    		as - 4 PC \\ 
+    		król - 3 PC \\
+    		dama - 2 PC \\
+    		walet - 1 PC
+    	\item Punkty za długość (PD): \\
+    		5-kartowy kolor - 1 PD \\
+    		6-kartowy kolor - 2 PD \\
+    		7-kartowy kolor - 3 PD
+    	\item Punkty za krótkość (PK): \\
+    		za renons - 3 PK \\
+    		za singla - 2 PK \\
+    		za dubla - 1 PK 
+    	\item Punkty za sfitowanie (PS): \\
+    		za dziewiątą i nastepne karty w kolorze uzgodnionym - po 1 PS 
+    	\end{itemize}
+    \section{Punkty potrzebne do zalicytowania gier premiowych}
+    	\begin{itemize}
+    	\item 3 \NT{} - 25 pkt. (PC+PD) 
+    	\item 4 \Hs{} i 4 \Ss{} - 27 pkt. (25 pkt.) (PC+PK+PS) 
+    	\item 5 \Cs{} i 5 \Ds{} - 30 pkt. (29 pkt.) (PC+PK+PS)  
+    	\end{itemize}
+    \section{Otwarcia na poziomie 1}
+    	\begin{itemize}
+    	\item 1 \Cs{} - 13-23 pkt. (PC+PD), brak 5+ \Hs{} / \Ss{}, \Cs{} lepsze niż \Ds{}, brak możliwości otwarcia 1 \NT{}
+    	\item 1 \Ds{} - 13-23 pkt. (PC+PD), brak 5+ \Hs{} / \Ss{}, \Ds{} lepsze niż \Cs{}, brak możliwości otwarcia 1 \NT{}
+    	\item 1 \Hs{} - 13-23 pkt. (PC+PD), 5+ \Hs{}, brak 5+ \Ss{} 
+    	\item 1 \Ss{} - 13-23 pkt. (PC+PD), 5+ \Ss{}
+    	\item 1 \NT{} - 15-17 pkt. (PC+PD), skład zrównoważony (brak krótkości, brak 2 dubli), brak 5+ \Hs{} / \Ss{}
+    	\end{itemize}
+\end{document}
