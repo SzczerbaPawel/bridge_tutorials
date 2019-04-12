@@ -1,0 +1,68 @@
+\documentclass{article}
+
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{kpfonts}
+\usepackage{color}
+
+\newcommand*\Hs[1]{\ensuremath{\color{red}\varheartsuit}}
+\newcommand*\Ss[1]{\ensuremath{\color{black}\spadesuit}}
+\newcommand*\Ds[1]{\ensuremath{\color{red}\vardiamondsuit}}
+\newcommand*\Cs[1]{\ensuremath{\color{black}\clubsuit}}
+\newcommand*\NT[1]{{\color{black}\textsc{NT}}}
+
+\begin{document}
+    \section{Otwarcia na poziomie 2}
+    	\begin{itemize}
+    	\item 2 \Cs{} - 24+ pkt. (PC+PD), skład dowolny
+    	\item 2 \Ds{} - 6-11 pkt. (PC), nienajgorszy sześciokart \Ds{}
+    	\item 2 \Hs{} - 6-11 pkt. (PC), nienajgorszy sześciokart \Hs{}
+    	\item 2 \Ss{} - 6-11 pkt. (PC), nienajgorszy sześciokart \Ss{}
+    	\item 2 \NT{} - 20-22 pkt. (PC+PD), skład zrównoważony (brak krótkości, brak 2 dubli), brak 5+ \Hs{} / \Ss{}
+    	\end{itemize}
+    \section{Skład zrównoważony}
+    	Składem zrównoważonym nazywamy dowolny skład w którym nie ma krótkości (singli i renonsów) oraz jest maksymalnie jeden dubel:
+    	\begin{itemize}
+    	\item 4432
+    	\item 5332
+    	\item 4333
+    	\end{itemize}
+    	Można rozróżnić jeszcze ręce semi-zrównoważone:
+    	\begin{itemize}
+    	\item 6322
+    	\item 5422
+    	\end{itemize}
+    \section{Priorytety w licytacji naturalnej}
+    \begin{enumerate}
+    	\item Uzgodnienie koloru starszego
+    	\item Zgłoszenie swojego koloru starszego
+    	\item Uzgodnienie koloru młodszego
+    	\item Zgłoszenie odzywki NT na odpowiednim poziomie (nie zgłaszaj koloru młodszego, jeżeli masz w nim tylko 4 karty i skład zrównoważony)
+    \end{enumerate}
+    \section{Odpowiedzi po otwarciu 1 w kolor}
+		\begin{enumerate}
+  			\item Siła 0-5 pkt.
+  			\begin{enumerate}
+   				 \item pas
+  			\end{enumerate}
+  			\item Siła 6-10 pkt.
+  			\begin{enumerate}
+   				 \item Uzgodnienie koloru partnera na wysokości 2
+   				 \item Zgłoszenie nowego koloru na wysokości 1 (4+ karty w nowym kolorze)
+   				 \item Zgłoszenie 1 NT
+  			\end{enumerate}
+  			\item Siła 11-12 pkt.
+  			\begin{enumerate}
+   				 \item Uzgodnienie koloru partnera na wysokości 3
+   				 \item Zgłoszenie nowego koloru na wysokości 1 lub 2 (4+ karty w nowym kolorze)
+   				 \item Zgłoszenie 2 NT
+  			\end{enumerate}
+  			\item Siła 13+ pkt.
+  			\begin{enumerate}
+   				 \item Skok nowym kolorem (5+ niezłych kart w nowym kolorze)
+   				 \item Zgłoszenie nowego koloru na wysokości 1 lub 2 (4+ karty w nowym kolorze)
+   				 \item Podniesienie koloru partnera do końcówki
+   				 \item Skok na 3NT
+  			\end{enumerate}
+		\end{enumerate}
+\end{document}
