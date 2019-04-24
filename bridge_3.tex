@@ -1,0 +1,52 @@
+\documentclass{article}
+
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{kpfonts}
+\usepackage{color}
+
+\newcommand*\Hs[1]{\ensuremath{\color{red}\varheartsuit}}
+\newcommand*\Ss[1]{\ensuremath{\color{black}\spadesuit}}
+\newcommand*\Ds[1]{\ensuremath{\color{red}\vardiamondsuit}}
+\newcommand*\Cs[1]{\ensuremath{\color{black}\clubsuit}}
+\newcommand*\NT[1]{{\color{black}\textsc{NT}}}
+
+\begin{document}
+    \section{Wybór karty wistu - wist naturalny}
+    	\begin{itemize}
+    	\item W figur przestrzelonych - czwartą najlepszą - KT7{\color{red}4}, Q87{\color{red}4}3, J87{\color{red}3}
+    	\item W trzeciej figury - najmłodszą - KT{\color{red}4}, Q7{\color{red}4}3, J8{\color{red}3}
+    	\item Z sekwensu (przeciwko NT sekwens trzykartowy, przeciwko grom kolorowym dwukartowy) - najwyższą z sekwensu - {\color{red}K}D76 (lub 6 przeciwko NT), {\color{red}D}WT4, {\color{red}W}T6 (lub 6 przeciwko NT)
+    	\item Z wewnętrznego sekwensu - najwyższą z sekwensu - K{\color{red}W}T4, K{\color{red}T}92
+    	\item Z blotek - najwyższą - {\color{red}7}643, {\color{red}9}2, {\color{red}8}73
+    	\item Z drugiej figury - figurą - {\color{red}K}3, {\color{red}W}8
+    	\end{itemize}
+    \section{Punktacja}
+    	\begin{itemize}
+    	\item Za wylicytowane lewy:
+    		\begin{itemize}
+    		\item Kolor młodszy \Cs{} / \Ds{} - 20 za każdą lewę
+    		\item Kolor starszy \Hs{} / \Ss{} - 30 za każdą lewę
+    		\item \NT{} - 40 za pierwszą lewę i 30 za każdą następną lewę
+    		\end{itemize}
+    	\item Premia za ugrany kontrakt:
+    		\begin{itemize}
+    		\item Za częściówki ($<$ 100) - 50
+    		\item Za końcówki ($\geq$ 100) - {\color{green}300}/{\color{red}500}
+    		\item Za szlemiki (gra na poziomie 6) - {\color{green}800}/{\color{red}1200}
+    		\item Za szlemy (gra na poziomie 7) - {\color{green}1300}/{\color{red}2000}
+    		\end{itemize}    	
+    	\item Nadróbki:
+    		\begin{itemize}
+    		\item Bez kontry - tak, jak za wylicytowane lewy
+    		\item Z kontrą - {\color{green}100}/{\color{red}200} za każdą nadróbkę
+    		\item Z rekontrą - {\color{green}200}/{\color{red}400} za każdą nadróbkę
+    		\end{itemize}  	
+    	\item Wpadki:
+    		\begin{itemize}
+    		\item Bez kontry - {\color{green}50}/{\color{red}100} za każdą lewę
+    		\item Z kontrą - {\color{green}100} za pierwszą lewę, {\color{green}200} za drugą i trzecią lewę, {\color{green}300} za czwartą i każdą następną/{\color{red}200} za pierwszą lewę, {\color{red}300} za drugą i każdą nastepną lewę
+    		\item Z rekontrą - {\color{green}300} za pierwszą lewę, {\color{green}400} za drugą i trzecią lewę, {\color{green}600} za czwartą i każdą następną/{\color{red}400} za pierwszą lewę, {\color{red}600} za drugą i każdą nastepną lewę
+    		\end{itemize}
+    	\end{itemize}
+\end{document}
