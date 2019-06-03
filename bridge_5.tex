@@ -1,0 +1,56 @@
+\documentclass{article}
+
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{kpfonts}
+\usepackage{color}
+
+\newcommand*\Hs[1]{\ensuremath{\color{red}\varheartsuit}}
+\newcommand*\Ss[1]{\ensuremath{\color{black}\spadesuit}}
+\newcommand*\Ds[1]{\ensuremath{\color{red}\vardiamondsuit}}
+\newcommand*\Cs[1]{\ensuremath{\color{black}\clubsuit}}
+\newcommand*\NT[1]{{\color{black}\textsc{NT}}}
+
+\begin{document}
+    \section{Licytacja po 1NT}
+    \begin{itemize}
+    \item 2\Cs{} - Stayman - pytanie o starszą czwórkę, 8+ PC
+    \item 2\Ds{} - transfer na kiery, 5+ \Hs{}, 0+ PC (obowiązkowa odpowiedź 2 \Hs{})
+    \item 2\Hs{} - transfer na piki, 5+ \Ss{}, 0+ PC (obowiązkowa odpowiedź 2 \Ss{})
+    \item 2NT - inwit do 3NT, 8-9 PC, brak starszej czwórki
+    \end{itemize}
+    \section{Odpowiedzi na Staymana}
+    \begin{center}
+    1-NT - 2 \Cs{} (Stayman) \\
+   	?
+    \end{center}
+    \begin{itemize}
+    \item 2 \Ds{} - brak starszej czwórki
+    \item 2 \Hs{} - czwórka \Hs{}, nie wyklucza czwórki \Ss{}
+    \item 2 \Ss{} - czwórka \Ss{}, wyklucza czwórkę \Hs{}
+    \end{itemize}
+    Dalsza licytacja naturalna.
+    \section{Dalsza licytacja po transferach}
+    \begin{center}
+    1-NT - 2 \Ds{} (transfer) \\
+    2 \Hs{} (automat) - ?
+    \end{center}
+    \begin{itemize}
+    \item pas - 0-7 PC
+    \item 2 NT - 8-9 PC, 5 \Hs{}
+    \item 3 \Hs{} - 8-9 PC, 6+ \Hs{}
+    \item 3 NT - 10+ PC, 5 \Hs{}
+    \item 4 \Hs{} - 10+ PC, 6+ \Hs{}
+    \end{itemize}
+    \begin{center}
+    1-NT - 2 \Hs{} (transfer) \\
+    2 \Ss{} (automat) - ?
+    \end{center}
+    \begin{itemize}
+    \item pas - 0-7 PC
+    \item 2 NT - 8-9 PC, 5 \Ss{}
+    \item 3 \Ss{} - 8-9 PC, 6+ \Ss{}
+    \item 3 NT - 10+ PC, 5 \Ss{}
+    \item 4 \Ss{} - 10+ PC, 6+ \Ss{}
+    \end{itemize}
+\end{document}
